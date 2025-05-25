@@ -4,8 +4,7 @@ import numpy as np
 import plotly.express as px
 st.title("CSV File Uploader")
 uploaded_file = st.file_uploader("Choose a excel file", type="xlsx")
-if uploaded_file is not None:
-    data = pd.read_excel(uploaded_file)
+data = pd.read_excel(uploaded_file)
 
 data.dropna(axis='columns',how='all',inplace=True)
 data1=data.iloc[:,0:4]
