@@ -3,3 +3,4 @@ plotly
 pytz
 pandas
 pyodbc
+openpyxl
